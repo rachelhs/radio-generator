@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <head>
 	<! content is number of seconds before refresh -->
-	  <meta name="changecontent" http-equiv="refresh" content="10000">
+	  <meta name="changecontent" http-equiv="refresh" content="60">
 </head>
 <body>
 	<p>{{ name }} {{ country }} {{ language }}</p>
+	<p>{{ select }} </p>
 	<video controls autoplay name="media">
 		<source src="{{ url }}" type="audio/mpeg">		
 	</video>
 <a href="{{ url_for('index') }}"><button>something else now please</button></a>
 <a href="{{ url_for('tenSeconds') }}"><button>change every 10 seconds please</button></a>
-<a href="{{ url_for('oneMinute') }}"><button>change every minute please</button></a>
+<a href="{{ url_for('oneMinute') }}"><button style="color:red">change every minute please</button></a>
 <a href="{{ url_for('tenMinutes') }}"><button>change every 10 minutes please</button></a>
 <a href="{{ url_for('oneHour') }}"><button>change every hour please</button></a>
 

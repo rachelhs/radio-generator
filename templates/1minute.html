@@ -2,17 +2,22 @@
 <head>
 	<! content is number of seconds before refresh -->
 	  <meta name="changecontent" http-equiv="refresh" content="60">
+	      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
 </head>
 <body>
-	<p>{{ name }} {{ country }} {{ language }}</p>
-	<p>{{ select }} </p>
-	<video controls autoplay name="media">
+<div class="container">
+	<p>Name: {{ name }} </p>
+	<p>Country: {{ country }} </p> 
+	<p>Language: {{ language }} </p>
+	<video class="player" controls autoplay name="media">
 		<source src="{{ url }}" type="audio/mpeg">		
 	</video>
-<a href="{{ url_for('index') }}"><button>something else now please</button></a>
-<a href="{{ url_for('tenSeconds') }}"><button>change every 10 seconds please</button></a>
-<a href="{{ url_for('oneMinute') }}"><button style="color:red">change every minute please</button></a>
-<a href="{{ url_for('tenMinutes') }}"><button>change every 10 minutes please</button></a>
-<a href="{{ url_for('oneHour') }}"><button>change every hour please</button></a>
+<a href="{{ url_for('index') }}"><button id="button1">skip</button></a>
+<a href="{{ url_for('tenSeconds') }}"><button id="button2">10s</button></a>
+<a href="{{ url_for('oneMinute') }}"><button id="button3" style="color:red">1m</button></a>
+<a href="{{ url_for('tenMinutes') }}"><button id="button4">10m</button></a>
+<a href="{{ url_for('oneHour') }}"><button id="button5">1h</button></a>
+</div>
 
 </body>

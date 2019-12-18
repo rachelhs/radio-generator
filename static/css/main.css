@@ -1,0 +1,46 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("boombox.jpg");
+	background-size: 60vw, 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.player {
+	margin-left: 42.5vw;
+	margin-top: 62vh;
+	width: 15vw;
+}
+button {
+	position: absolute;
+	border-radius: 50%;
+	width: 3vw;
+	height: 3vw;
+	margin-top: 10vh;
+	text-align: center;
+}
+#button1 {
+	margin-left: -18vw;
+}
+
+#button2 {
+	margin-left: -13vw;
+}
+
+#button3 {
+	margin-left: -8.5vw;
+}
+
+#button4 {
+	margin-left: -4vw;
+}
+
+#button5 {
+	margin-left: 0.5vw;
+}
+
+p {
+	text-align: center;
+}
+

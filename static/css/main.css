@@ -19,6 +19,7 @@ button {
 	height: 37px;
 	top: 188px;
 	text-align: center;
+	left: 50%;
 }
 
 #text {
@@ -27,22 +28,22 @@ button {
 }
 
 #button1 {
-	margin-left: -18vw;
+	transform: translateX(-132px);
 }
 
 #button2 {
-	margin-left: -13vw;
+	transform: translateX(-70px);
 }
 
 #button3 {
-	margin-left: -8.5vw;
+    transform: translateX(-14px);
 }
 
 #button4 {
-	margin-left: -4vw;
+	transform: translateX(43px);
 }
 
 #button5 {
-	margin-left: 0.5vw;
+    transform: translateX(99px);
 }
 

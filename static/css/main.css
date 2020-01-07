@@ -2,9 +2,9 @@
 	width: 100vw;
 	height: 100vh;
 	background-image: url("boombox.jpg");
-	background-size: 60vw, 100vh;
+	background-size: 750px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	position: relative;
 }
 .player {
@@ -15,11 +15,17 @@
 button {
 	position: absolute;
 	border-radius: 50%;
-	width: 3vw;
-	height: 3vw;
-	margin-top: 10vh;
+	width: 37px;
+	height: 37px;
+	top: 188px;
 	text-align: center;
 }
+
+#text {
+	text-align: center;
+	top: 20px;
+}
+
 #button1 {
 	margin-left: -18vw;
 }
@@ -38,9 +44,5 @@ button {
 
 #button5 {
 	margin-left: 0.5vw;
-}
-
-p {
-	text-align: center;
 }
 
